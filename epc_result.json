@@ -1,0 +1,62 @@
+{
+  "inputs": {
+    "modules": [
+      {
+        "name": "Module A",
+        "weight": 0.6,
+        "conv": 0.03,
+        "aov": 45.0,
+        "rate": 0.03
+      },
+      {
+        "name": "Module B",
+        "weight": 0.25,
+        "conv": 0.03,
+        "aov": 90.0,
+        "rate": 0.045
+      },
+      {
+        "name": "Module C",
+        "weight": 0.15,
+        "conv": 0.025,
+        "aov": 150.0,
+        "rate": 0.04
+      }
+    ],
+    "bounties": [
+      {
+        "name": "Bounty 1",
+        "attach": 0.008,
+        "payout": 3.0
+      },
+      {
+        "name": "Bounty 2",
+        "attach": 0.002,
+        "payout": 10.0
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "Bonus 1",
+        "order_share": 0.1,
+        "payout": 3.0
+      }
+    ]
+  },
+  "components": {
+    "orders_per_click": 0.029249999999999998,
+    "epc_products": 0.077175,
+    "epc_bounties": 0.044,
+    "epc_bonuses": 0.008775000000000002
+  },
+  "totals": {
+    "epc": 0.12994999999999998,
+    "revenue_per_1000_clicks": 129.95,
+    "orders_per_1000_clicks": 29.25
+  },
+  "pricing": {
+    "breakeven_cpc": 0.12994999999999998,
+    "cpc_cap_for_margin": 0.09096499999999998,
+    "target_margin": 0.3
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "modules": [
+    {
+      "name": "Module A",
+      "weight": 0.6,
+      "conv": 0.03,
+      "aov": 45.0,
+      "rate": 0.03
+    },
+    {
+      "name": "Module B",
+      "weight": 0.25,
+      "conv": 0.03,
+      "aov": 90.0,
+      "rate": 0.045
+    },
+    {
+      "name": "Module C",
+      "weight": 0.15,
+      "conv": 0.025,
+      "aov": 150.0,
+      "rate": 0.04
+    }
+  ],
+  "bounties": [
+    {
+      "name": "Bounty 1",
+      "attach": 0.008,
+      "payout": 3.0
+    },
+    {
+      "name": "Bounty 2",
+      "attach": 0.002,
+      "payout": 10.0
+    }
+  ],
+  "bonuses": [
+    {
+      "name": "Bonus 1",
+      "order_share": 0.1,
+      "payout": 3.0
+    }
+  ]
+}
