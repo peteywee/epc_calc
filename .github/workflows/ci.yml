@@ -1,0 +1,21 @@
+name: CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  test-and-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run unit tests
+        run: python -m unittest -v
+      - name: Run example model
+        run: |
+          mkdir -p results
+          python epc_model.py --in model_example.json --out results/example.result.json --margin 0.30 --strict
+          cat results/example.result.json
