@@ -1,14 +1,20 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "epc-calc"
 version = "0.1.0"
 description = "Category-agnostic EPC calculator"
 readme = "README.md"
 requires-python = ">=3.8"
-license = {text = "MIT"}
+license = "MIT"
 
 [project.scripts]
 epc = "epc_model:main"
 
-[build-system]
-requires = ["setuptools>=68", "wheel"]
-build-backend = "setuptools.build_meta"
+[tool.setuptools]
+# Force single-module build; do NOT auto-discover packages
+packages = []
+py-modules = ["epc_model"]
